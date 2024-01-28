@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4 Colores</title>
+</head>
+
+<body>
+
+    <div id="ele1" style="width: 200px; height: 200px; background-color: blue;"></div>
+    <div id="ele2" style="width: 200px; height: 200px; background-color: red;"></div>
+    <div id="ele3" style="width: 200px; height: 200px; background-color: green;"></div>
+    <div id="ele4" style="width: 200px; height: 200px; background-color: yellow;"></div>
+
+
+    <script>
+        let ele1 = document.getElementById('ele1')
+        let ele2 = document.getElementById('ele2')
+        let ele3 = document.getElementById('ele3')
+        let ele4 = document.getElementById('ele4')
+
+        const changeColor = (element, color) =>{
+            element.style.backgroundColor = color
+        }
+
+        ele1.addEventListener('click', () => {
+            changeColor(ele1, 'black')
+        })
+
+        ele2.addEventListener('click', () => {
+            changeColor(ele2, 'black')
+        })
+
+        ele3.addEventListener('click', () => {
+            changeColor(ele3, 'black')
+        })
+
+        ele4.addEventListener('click', () => {
+            changeColor(ele4, 'black')
+        })
+
+    </script>
+
+</body>
+
+</html>
